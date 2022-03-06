@@ -1,0 +1,86 @@
+.small-section h1 {
+    font-size: 2.25rem;
+}
+
+.small-section {
+    padding-bottom: 35px;
+}
+
+.fa-check-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.usp-container {
+    width: 70%;
+    min-width: 280px;
+    margin: 35px auto;
+}
+
+.usp-item {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin: 25px;  
+    width: 235px;
+}
+
+.circle {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: rgb(0, 140, 149);
+    margin-bottom: 1.25rem;
+}
+
+.section-title {
+    padding: 15px;
+}
+
+.section-title h1 {
+    text-shadow: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .usp-container {
+        margin: 3.125rem auto 0px auto;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .usp-container {
+        margin: 6.25rem auto 0px auto;
+    }
+}
+
+/* ---------- */
+
+.small-section .filled-button {
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 771px) {
+    .small-section .filled-button {
+        margin-top: 90px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .small-section .filled-button {
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .small-section .filled-button {
+        margin-top: 150px;
+    }
+}
+

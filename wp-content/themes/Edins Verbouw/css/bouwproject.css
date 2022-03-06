@@ -1,0 +1,141 @@
+
+#away-with-the-padding-top {
+  padding-top: 0px;
+}
+
+#away-with-the-padding-bottom {
+  padding-bottom: 0px;
+}
+
+.tiny-section {
+  text-align: left;
+  box-shadow: 0px 2px 6px rgba(41, 50, 61, 0.5);
+}
+
+.small-section {
+  padding-top: 25px;
+  min-height: 200px;
+}
+
+.small-section h5 {
+  color: rgb(243, 206, 90);
+}
+
+.small-section h6 {
+  color: rgb(255, 255, 255);
+}
+
+.small-section h3 {
+  color: rgb(0, 140, 149);
+}
+
+.small-section h1, .small-section h2 {
+  text-shadow: none;
+}
+
+.section {
+  padding-top: 25px;
+}
+
+.transparant-button {
+  margin-left: 2rem;
+  margin-top: 1.2rem;
+}
+
+.carousel {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  width: 60%;
+  min-width: 450px;
+}
+
+.carousel-main {
+  width: 100%;
+}
+
+.carousel-cell  {
+  width: 370px;
+  height: 320px;
+  margin: 10px;
+  border-radius: 7px;
+  z-index: 1;
+}
+
+.carousel-main .carousel-cell {
+  min-width: 290px;
+}
+
+.carousel-nav {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.carousel-nav .carousel-cell {
+  height: 80px;
+  width: 100px;
+}
+
+.carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.carousel-nav .carousel-cell.is-nav-selected {
+  border: 3px solid rgb(0, 140, 149);
+}
+
+.overlay-cell {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.25;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  border-radius: 7px;
+  box-shadow: 0px 0px 8px rgba(41, 50, 61, 1);
+  transition: background-color 200ms;
+}
+
+.carousel-nav .carousel-cell .overlay-cell:hover {
+  background-color: rgb(0, 140, 149);
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-nav {
+    display: none;
+  }
+
+  body .section {
+    min-height: 400px;
+  }
+
+  .carousel-cell {
+    width: 350px;
+    height: 300px;
+  }
+
+  .carousel {
+    min-width: 100%;
+  }
+
+  .tiny-section {
+    text-align: center;
+  }
+
+  .transparant-button {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .carousel-cell {
+    width: 250px;
+    height: 215px;
+  }
+
+  body .section {
+    min-height: 300px;
+  }
+}

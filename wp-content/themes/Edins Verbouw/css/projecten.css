@@ -1,0 +1,25 @@
+
+.section-projecten {
+    padding-top: 25px;
+    text-align: center;
+    min-height: 0;
+}
+
+.extra-padding {
+    padding-top: 100px;
+}
+
+.small-section .article-text-centered {
+    margin-top: 0;
+}
+
+.article-text-left h1 {
+    color:rgb(0, 140, 149)
+}
+
+@media only screen and (max-width: 1133px) {
+    .section-projecten .article-text-left, .section-projecten .image-container {
+        
+        margin-bottom: 0;
+    }
+}

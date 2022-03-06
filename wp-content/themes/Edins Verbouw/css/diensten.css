@@ -1,0 +1,318 @@
+/* ---------------------------------------------------------------------------------------------- */
+/*                                                                                                */
+/* ------------------------------------------------------------------- *//*                       *//* ------------------------------------------------------------------------------------------- */
+/* Classes that will be used throughout this page  ------------------- *//*                       *//* ------------------------------------------------------------------------------------------- */
+/* -- These classes are also to be used when creating a new element -- *//*                       *//* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- *//*                       *//* ------------------------------------------------------------------------------------------- */
+/*                                                                                                */
+/* ---------------------------------------------------------------------------------------------- */
+
+
+/* -------------------- */
+/* Icons and animations *//* ------------------------------------------------------------------------------------------- */
+/* -------------------- */
+
+.animations-container {
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    min-width: 270px;
+    width: 80%;
+    max-width: 550px;
+    margin: 30px;
+    padding: 25px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.center-animations-left, .center-animations-right {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.center-animations-left {
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+.center-animations-right {
+    right: 40%;
+    transform: translate(50%, -50%);
+}
+
+.tools-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.toolbox-icon {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.fill-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.roller-icon {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+@media only screen and (max-width: 1163px) {
+    .article-text-left, .article-text-right, .article-text-centered {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .center-animations-left {
+        left: 40%;
+        top: 20%;
+    }
+
+    .center-animations-right {
+        right: 60%;
+        top: 20%;
+    }
+}
+
+/* --------------- */
+/* Something Weird *//* ------------------------------------------------------------------------------------------- */
+/* --------------- */
+
+.small-section ul li p {
+    margin: 1px;
+    display: inline-block;
+}
+
+/* ------------------ */
+/* Font Awesome Icons *//* ------------------------------------------------------------------------------------------- */
+/* ------------------ */
+
+.fa-tools, .fa-toolbox, .fa-paint-roller, .fa-fill, .fa-check-circle{
+    font-size: 7.5rem;
+}
+
+.fa-tools, .fa-fill {
+    color: rgb(0, 140, 149);
+}
+
+
+.fa-check {
+    font-size: 1rem;
+    color: rgb(0, 140, 149);
+    margin-right: 1.25rem;
+}
+
+.fa-sync-alt {
+    position: absolute;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 350ms;
+}
+
+@media only screen and (max-width: 768px) {
+    .fa-sync-alt {
+        display: none;
+    }
+}
+
+/* --------------- */
+/* Form Properties *//* ------------------------------------------------------------------------------------------- */
+/* --------------- */
+
+.section-title {
+    margin-bottom: 2rem;
+}
+
+.section-title h1 {
+    color: rgb(243, 206, 90);
+}
+
+form {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 270px;
+    text-align: center;
+}
+
+.section #offerte form label .filled-button {
+    margin: 25px 10px;
+}
+
+input[type="text"] {
+    width: 43.2%;
+    margin: 1.5%;
+    padding: 10px;
+    font-family: 'Roboto' sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 50, 61);
+    border: none;
+}
+
+input[type="email"], input[type="number"] {
+    width: 90%;
+    margin: 1.5%;
+    padding: 15px;
+    font-family: 'Roboto' sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 50, 61);
+    resize: none;
+    border: none;
+}
+
+textarea {
+    width: 90%;
+    margin: 1.5%;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(41, 50, 61);
+    resize: none;
+    border: none;
+}
+
+input[type="submit"] {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#submit {
+    display: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background-color: rgba(41, 50, 61, 0.75);
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+::placeholder {
+    font-family: 'Roboto' sans-serif;
+    opacity: 0.7;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.form-buttons {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 1000px rgba(41, 50, 61) inset;
+    -webkit-box-shadow: 0 0 0 1000px rgba(41, 50, 61) inset;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+}
+
+iframe {
+    text-align: center;
+    display: none;
+    border: none;
+    min-width: 270px;
+    width: 500px;
+    min-height: 300px;
+}
+
+@media only screen and (max-width: 550px) {
+    iframe {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    iframe {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    iframe {
+        width: 325px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    iframe {
+        width: 270px;
+        height: 400px;
+    }
+}
+
+/* ------------------ */
+/* Extra Id's --------*//* ------------------------------------------------------------------------------------------- */
+/* ------------------ */
+
+#special {
+    display: none;
+}
+
+#offerte {
+    scroll-margin-block-start: 120px;
+}
+
+#hide-on-phone { /* Only use this if hiding it using current ID or (combination of) Class(es) isn't possible */
+    display: inline-block;
+}
+
+#show-on-phone { /* Same thing */
+    display: none;
+}
+
+@media only screen and (max-width: 1163px) {
+    #hide-on-phone { 
+        display: none;
+    }
+
+    #show-on-phone { 
+        display: inline-block;
+    }
+}
+
